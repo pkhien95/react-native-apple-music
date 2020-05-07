@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		05DC87682462DCFF005BB88F /* AppleMusic.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E7B5891CC2AC0600A0062D /* AppleMusic.m */; };
 		05DC876B2462DD92005BB88F /* MediaPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 05DC876A2462DD92005BB88F /* MediaPlayer.m */; };
 		05DC87892462E39E005BB88F /* Auth.m in Sources */ = {isa = PBXBuildFile; fileRef = 05DC876D2462DE1B005BB88F /* Auth.m */; };
 /* End PBXBuildFile section */
@@ -31,7 +30,6 @@
 		05DC876D2462DE1B005BB88F /* Auth.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Auth.m; sourceTree = "<group>"; };
 		134814201AA4EA6300B7C361 /* libAppleMusic.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAppleMusic.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3E7B5881CC2AC0600A0062D /* AppleMusic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppleMusic.h; sourceTree = "<group>"; };
-		B3E7B5891CC2AC0600A0062D /* AppleMusic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppleMusic.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +59,6 @@
 				05DC87692462DD92005BB88F /* MediaPlayer.h */,
 				05DC876A2462DD92005BB88F /* MediaPlayer.m */,
 				B3E7B5881CC2AC0600A0062D /* AppleMusic.h */,
-				B3E7B5891CC2AC0600A0062D /* AppleMusic.m */,
 				134814211AA4EA7D00B7C361 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -124,7 +121,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				05DC87892462E39E005BB88F /* Auth.m in Sources */,
-				05DC87682462DCFF005BB88F /* AppleMusic.m in Sources */,
 				05DC876B2462DD92005BB88F /* MediaPlayer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
