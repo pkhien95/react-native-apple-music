@@ -13,6 +13,15 @@ declare module 'react-native-apple-music' {
     capabilityAddToCloudMusicLibrary
   }
 
+  export enum PlaybackState {
+    playbackStateStopped,
+    playbackStatePlaying,
+    playbackStatePaused,
+    playbackStateInterrupted,
+    playbackStateSeekingForward,
+    playbackStateSeekingBackward,
+  }
+
   export interface Auth {
     requestAuthorization: () => Promise<AuthorizationStatus|any>
     getStoreFrontCountryCode: () => Promise<string|any>
@@ -22,6 +31,7 @@ declare module 'react-native-apple-music' {
 
   export interface MediaPlayer {
     setQueue: (storeIDs: string[]) => void
+    getPlaybackState: () => PlaybackState
     play: () => void
     pause: () => void
     stop: () => void

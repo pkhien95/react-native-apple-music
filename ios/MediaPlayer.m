@@ -7,10 +7,33 @@
 //
 
 #import "MediaPlayer.h"
+#import <React/RCTConvert.h>
+
+@implementation RCTConvert (MPMusicPlaybackState)
+  RCT_ENUM_CONVERTER(MPMusicPlaybackState, (@{
+      @"playbackStateStopped":@(MPMusicPlaybackStateStopped),
+      @"playbackStatePlaying": @(MPMusicPlaybackStatePlaying),
+      @"playbackStatePaused": @(MPMusicPlaybackStatePaused),
+      @"playbackStateInterrupted": @(MPMusicPlaybackStateInterrupted),
+      @"playbackStateSeekingForward": @(MPMusicPlaybackStateSeekingForward),
+      @"playbackStateSeekingBackward": @(MPMusicPlaybackStateSeekingBackward)}),
+  MPMusicPlaybackStateStopped, integerValue)
+@end
+
 
 @implementation MediaPlayer
 
 RCT_EXPORT_MODULE()
+
+- (NSDictionary *)constantsToExport
+{
+  return @{ @"playbackStateStopped":@(MPMusicPlaybackStateStopped),
+  @"playbackStatePlaying": @(MPMusicPlaybackStatePlaying),
+  @"playbackStatePaused": @(MPMusicPlaybackStatePaused),
+  @"playbackStateInterrupted": @(MPMusicPlaybackStateInterrupted),
+  @"playbackStateSeekingForward": @(MPMusicPlaybackStateSeekingForward),
+  @"playbackStateSeekingBackward": @(MPMusicPlaybackStateSeekingBackward)};
+};
 
 + (MPMusicPlayerApplicationController*) applicationQueuePlayer
 {
@@ -28,6 +51,11 @@ RCT_EXPORT_METHOD(setQueue: (NSArray<NSString*>*)storeIDs)
     [MediaPlayer.applicationQueuePlayer setQueueWithDescriptor:descriptor];
 }
 
+RCT_EXPORT_METHOD(getPlaybackState)
+{
+    [MediaPlayer.applicationQueuePlayer playbackState];
+}
+
 RCT_EXPORT_METHOD(play)
 {
     [MediaPlayer.applicationQueuePlayer play];
@@ -35,7 +63,7 @@ RCT_EXPORT_METHOD(play)
 
 RCT_EXPORT_METHOD(pause)
 {
-    [MediaPlayer.applicationQueuePlayer play];
+    [MediaPlayer.applicationQueuePlayer pause];
 }
 
 RCT_EXPORT_METHOD(stop)
