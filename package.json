@@ -1,7 +1,7 @@
 {
   "name": "@pkhien/react-native-apple-music",
   "title": "React Native Apple Music",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "React Native library to support working with Apple Music",
   "main": "index.js",
   "scripts": {},
