@@ -1,23 +1,21 @@
 {
-  "name": "react-native-apple-music",
+  "name": "@pkhien/react-native-apple-music",
   "title": "React Native Apple Music",
   "version": "1.0.0",
-  "description": "TODO",
+  "description": "React Native library to support working with Apple Music",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "scripts": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/github_account/react-native-apple-music.git",
-    "baseUrl": "https://github.com/github_account/react-native-apple-music"
+    "url": "git+https://github.com/pkhien95/react-native-apple-music.git",
+    "baseUrl": "https://github.com/pkhien95/react-native-apple-music"
   },
   "keywords": [
     "react-native"
   ],
   "author": {
-    "name": "Your Name",
-    "email": "yourname@email.com"
+    "name": "Hien Phung",
+    "email": "pkhien95@gmail.com"
   },
   "license": "MIT",
   "licenseFilename": "LICENSE",
@@ -29,5 +27,8 @@
   "devDependencies": {
     "react": "^16.9.0",
     "react-native": "^0.61.5"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

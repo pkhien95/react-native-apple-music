@@ -2,7 +2,7 @@
 
 ## Getting started
 
-`$ npm install react-native-apple-music --save`
+`$ npm install @pkhien/react-native-apple-music --save`
 
 ### Mostly automatic installation
 
